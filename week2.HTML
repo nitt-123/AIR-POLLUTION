@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Air Pollution - Week 2 Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef3f9;
+      padding: 30px;
+    }
+    .quiz-box {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question h3 {
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="quiz-box">
+  <h1>Week 2: Air Pollution and Control Quiz</h1>
+  <form id="quizForm">
+    <!-- Questions -->
+    <div class="question">
+      <h3>1. Why is albedo a significant concern in climatology?</h3>
+      <label><input type="radio" name="q1" value="a"> a. It influences global wind patterns</label>
+      <label><input type="radio" name="q1" value="b"> b. It directly increases greenhouse gas emissions</label>
+      <label><input type="radio" name="q1" value="c"> c. It reduces atmospheric oxygen levels</label>
+      <label><input type="radio" name="q1" value="d"> d. A decrease in albedo increases heat absorption, causing ice to melt</label>
+    </div>
+    <div class="question">
+      <h3>2. What happens when soot enters the atmosphere?</h3>
+      <label><input type="radio" name="q2" value="a"> a. It reflects sunlight, cooling the air</label>
+      <label><input type="radio" name="q2" value="b"> b. It absorbs sunlight and generates heat, warming the air</label>
+      <label><input type="radio" name="q2" value="c"> c. It mixes with clouds to form rain</label>
+      <label><input type="radio" name="q2" value="d"> d. It increases the albedo of the Earth's surface</label>
+    </div>
+    <div class="question">
+      <h3>3. How does soot affect snow and ice after being deposited?</h3>
+      <label><input type="radio" name="q3" value="a"> a. It reduces their albedo, absorbing more sunlight</label>
+      <label><input type="radio" name="q3" value="b"> b. It increases their albedo, reflecting more sunlight</label>
+      <label><input type="radio" name="q3" value="c"> c. It has no significant impact on snow and ice</label>
+      <label><input type="radio" name="q3" value="d"> d. It accelerates the formation of glaciers</label>
+    </div>
+    <div class="question">
+      <h3>4. In water bodies, which gas can be depleted by eutrophication?</h3>
+      <label><input type="radio" name="q4" value="a"> a. CO₂</label>
+      <label><input type="radio" name="q4" value="b"> b. SO₂</label>
+      <label><input type="radio" name="q4" value="c"> c. O₂</label>
+      <label><input type="radio" name="q4" value="d"> d. CO</label>
+    </div>
+    <div class="question">
+      <h3>5. Which of the following is NOT a type of marine aerosol?</h3>
+      <label><input type="radio" name="q5" value="a"> a. Sea salt</label>
+      <label><input type="radio" name="q5" value="b"> b. Sulfate aerosol</label>
+      <label><input type="radio" name="q5" value="c"> c. Mineral dust</label>
+      <label><input type="radio" name="q5" value="d"> d. Methane gas</label>
+    </div>
+    <div class="question">
+      <h3>6. What is the approximate size of jet drops compared to their precursor bubble diameter?</h3>
+      <label><input type="radio" name="q6" value="a"> a. 50%</label>
+      <label><input type="radio" name="q6" value="b"> b. 25%</label>
+      <label><input type="radio" name="q6" value="c"> c. 10%</label>
+      <label><input type="radio" name="q6" value="d"> d. 5%</label>
+    </div>
+    <div class="question">
+      <h3>7. Select the incorrect pair of given particulate matter.</h3>
+      <label><input type="radio" name="q7" value="a"> a. Dust 1 to 200 µm</label>
+      <label><input type="radio" name="q7" value="b"> b. Smoke 0.01 to 1 µm</label>
+      <label><input type="radio" name="q7" value="c"> c. Fumes 0.1 to 1 µm</label>
+      <label><input type="radio" name="q7" value="d"> d. Mist greater than 1 µm</label>
+    </div>
+    <div class="question">
+      <h3>8. ____________ is one of the processes of movement of gases and liquids (fluids) to transfer heat between regions of different temperatures.</h3>
+      <label><input type="radio" name="q8" value="a"> a. Advection</label>
+      <label><input type="radio" name="q8" value="b"> b. Convection</label>
+      <label><input type="radio" name="q8" value="c"> c. Diffusion</label>
+      <label><input type="radio" name="q8" value="d"> d. Dispersion</label>
+    </div>
+    <div class="question">
+      <h3>9. What is the primary role of the hydroxyl radical (OH) in the troposphere?</h3>
+      <label><input type="radio" name="q9" value="a"> a. Control the atmospheric lifetime of gases</label>
+      <label><input type="radio" name="q9" value="b"> b. Absorb UV radiation</label>
+      <label><input type="radio" name="q9" value="c"> c. Cause acid rain</label>
+      <label><input type="radio" name="q9" value="d"> d. Act as a greenhouse gas</label>
+    </div>
+    <div class="question">
+      <h3>10. Which of the following phenomena is responsible for transferring the heat energy from the tropics to the poles to create atmospheric circulation?</h3>
+      <label><input type="radio" name="q10" value="a"> a. Conduction</label>
+      <label><input type="radio" name="q10" value="b"> b. Convection</label>
+      <label><input type="radio" name="q10" value="c"> c. Advection</label>
+      <label><input type="radio" name="q10" value="d"> d. Pyrolysis</label>
+    </div>
+
+    <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    <div class="result" id="result"></div>
+  </form>
+</div>
+
+<script>
+  const answers = {
+    q1: "d",
+    q2: "b",
+    q3: "a",
+    q4: "c",
+    q5: "d",
+    q6: "c",
+    q7: "d",
+    q8: "b",
+    q9: "a",
+    q10: "c"
+  };
+
+  function submitQuiz() {
+    let score = 0;
+    for (let q in answers) {
+      const selected = document.querySelector(`input[name="${q}"]:checked`);
+      if (selected && selected.value === answers[q]) {
+        score++;
+      }
+    }
+    document.getElementById("result").innerText = `You scored ${score} out of 10.`;
+  }
+</script>
+
+</body>
+</html>
 
